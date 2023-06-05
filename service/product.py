@@ -15,7 +15,7 @@ class ProductService():
             description = product.description.upper(),
             price = product.price,
             availability = product.availability.upper(),
-            availiable_quantity = product.availiable_quantity
+            available_quantity = product.available_quantity
         )
         self.db.add(new_product)
         self.db.commit()
@@ -32,7 +32,7 @@ class ProductService():
         product.description = data.description
         product.price = data.price
         product.availability= data.availability
-        product.availiable_quantity = data.availiable_quantity
+        product.available_quantity = data.available_quantity
 
 
         self.db.commit()

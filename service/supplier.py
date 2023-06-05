@@ -1,6 +1,8 @@
 from models.supplier import Supplier as SupplierModel
 from schemas.supplier import Supplier
+
 class SupplierService():
+
     def __init__(self, db):
         self.db = db
         
@@ -11,8 +13,8 @@ class SupplierService():
     def  create_supplier(self,supplier:SupplierModel):
         new_supplier= SupplierModel(
             name = supplier.name.upper(),
-            addres = supplier.addres.upper(),
-            phone = supplier.phone
+            address = supplier.address.upper(),
+            phone = supplier.phone,
             email= supplier.email.upper(),
             
         )
@@ -21,22 +23,20 @@ class SupplierService():
         return
     
     def get_for_id(self,id:int):
-        result = self.db.query(SupplierModel).filter(Model.id == id). first()
+        result = self.db.query(SupplierModel).filter(SupplierModel.id == id). first()
         return result
     
     def update_supplier(self,data:Supplier):
-        supplier = self.db.query(SupplierModel).filter(SupplierModel.id ==data.id).first()
+        supplier = self.db.query(SupplierModel).filter(SupplierModel.id == data.id).first()
         supplier.name = data.name
-        supplier.addres = data.addres
+        supplier.address = data.address
         supplier.phone = data.phone
         supplier.email = data.email
-        
-
-
         self.db.commit()
         return
     
     def delete_supplier(self,id:int):
-        self.db.query(SuppliertModel).filter(SupplierModel.id == id).delete()
+        supplier = self.db.query(SupplierModel).filter(SupplierModel.id == id).first()
+        self.db.delete(supplier)
         self.db.commit()
         return  

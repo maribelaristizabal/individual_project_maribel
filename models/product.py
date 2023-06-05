@@ -5,7 +5,7 @@ from config.database import Base
 
 class Product(Base):
 
-    __tablename__="products"
+    __tablename__="product"
 
     id = Column(Integer,primary_key=True)
     name = Column(String)
@@ -14,5 +14,5 @@ class Product(Base):
     price = Column(Integer)
     entry_date = Column(String)
     availability = Column(String)
-    avaliable_quantity= Column(Integer)
+    available_quantity= Column(Integer)
     
