@@ -8,8 +8,8 @@ class Supplier(Base):
     __tablename__="supplier"
 
     id = Column(Integer,primary_key=True)
-    Name = Column(String)
+    name = Column(String)
     address = Column(String)
     phone = Column(Integer)
-    Email = Column(String)
+    email = Column(String)
    

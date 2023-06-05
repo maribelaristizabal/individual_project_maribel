@@ -8,11 +8,11 @@ class Product(Base):
     __tablename__="products"
 
     id = Column(Integer,primary_key=True)
-    Name = Column(String)
-    Brand = Column(String)
-    Description = Column(String)
-    Price = Column(Integer)
-    Entry_date = Column(String)
+    name = Column(String)
+    brand = Column(String)
+    description = Column(String)
+    price = Column(Integer)
+    entry_date = Column(String)
     availability = Column(String)
-    Avaliable_Quantity= Column(Integer)
+    avaliable_quantity= Column(Integer)
     

@@ -1,18 +1,18 @@
-# Proyecto de CRUD de Películas - FastAPI
+# Proyecto de Sistema de inventario - FastAPI
 
-<img src="img/programate-academy.png" alt="Logo Programate">
+<img src="img/Sistema_de_invetario.png" alt="Logo Inventario">
 
 ## Descripción
 
-Este proyecto es un ejemplo de una API RESTful desarrollada con FastAPI que permite realizar operaciones CRUD (Crear, Leer, Actualizar, Eliminar) en un modelo de películas. Está diseñado con un enfoque académico para que los aprendices de programación backend puedan utilizarlo como punto de partida y comenzar a trabajar sobre él.
+Este proyecto es un ejemplo de una API RESTful desarrollada con FastAPI que permite realizar operaciones CRUD (Crear, Leer, Actualizar, Eliminar) en un modelo de sistema de invetario. Está diseñado desde el aprendizaje de mi anterior proyecto FasTAPI.
 
 ## Funcionalidades
 
-- Obtener todas las películas disponibles
-- Obtener una película por su ID
-- Crear una nueva película
-- Actualizar una película existente
-- Eliminar una película
+- Obtener un producto por su ID
+- Obtener el stock de los productos 
+- ingresar un nuevo producto
+- Actualizar un producto 
+- Eliminar un producto
 
 ## Tecnologías utilizadas
 
@@ -31,7 +31,7 @@ git clone git@github.com:JSand89/my-movie-app-c9.git
 
 cd my-movie-app-c9
 
-3. Tu o uno de tus companeros debe cambiar el origen del repositorio 
+3. Cambie el origen del repositorio 
 
 git remote -v
 
@@ -39,11 +39,7 @@ git remote remove origin
 
 git remote add origin <nueva_url_del_repositorio>
 
-4. Ahora, tus compañeros deben clonar tu repositorio y tú debes darles permiso para editarlo
-
-Desde el repositorio en GitHub, ve a "Settings" y luego a la sección de "Collaborators" para agregarlos. Esto tiene como objetivo permitirles realizar cambios. No te preocupes, realizaremos este proceso en clase."
-
-5. Instala las dependencias necesarias:
+4. Instale las dependencias necesarias:
 
 pip install -r requirements.txt
 
@@ -60,11 +56,11 @@ uvicorn main:app --reload
 http://localhost:8000/docs
 
 
-3. Prueba las diferentes rutas disponibles para realizar operaciones CRUD en las películas.
+3. Prueba las diferentes rutas disponibles para realizar operaciones CRUD en los productos.
 
 
 ## Contacto
 
-Si tienes alguna pregunta o sugerencia o quieres el workbook para desarrollar este proyecto, no dudes en contactarme en [jsanchez@educamas.com.co](jsanchez@educamas.com.co).
+Si tienes alguna pregunta o sugerencia de este proyecto, no dudes en contactarme en [maribelaristizabal079@gmail.com](https://github.com/maribelaristizabal).
 
 
