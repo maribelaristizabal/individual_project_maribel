@@ -1,66 +1,42 @@
-# Proyecto de Sistema de inventario - FastAPI
+# Inventory System Project - FastAPI
 
-<img src="img/Sistema_de_invetario.png" alt="Logo Inventario">
+<img src="img/inventory_system.png" alt="Inventory Logo">
 
-## Descripción
+## Description
 
-Este proyecto es un ejemplo de una API RESTful desarrollada con FastAPI que permite realizar operaciones CRUD (Crear, Leer, Actualizar, Eliminar) en un modelo de sistema de invetario. Está diseñado desde el aprendizaje de mi anterior proyecto FasTAPI.
+This project is an example of a RESTful API developed with FastAPI that allows you to perform CRUD (Create, Read, Update, Delete) operations on an inventory system model. It is designed from learning from my previous project FasTAPI.
 
-## Funcionalidades
+## Features
 
-- Obtener un producto por su ID
-- Obtener el stock de los productos 
-- ingresar un nuevo producto
-- Actualizar un producto 
-- Eliminar un producto
+- Get a product by your ID
+- Obtain the stock of the products
+- enter a new product
+- Update a product
+- Delete a product
 
-## Tecnologías utilizadas
+## Used technology
 
 - Python
 - FastAPI
 - Pydantic
 
-## Instalación
 
-1. Clona este repositorio en tu máquina local:
+## Use
 
-git clone git@github.com:JSand89/my-movie-app-c9.git
-
-
-2. Navega al directorio del proyecto:
-
-cd my-movie-app-c9
-
-3. Cambie el origen del repositorio 
-
-git remote -v
-
-git remote remove origin
-
-git remote add origin <nueva_url_del_repositorio>
-
-4. Instale las dependencias necesarias:
-
-pip install -r requirements.txt
-
-
-## Uso
-
-1. Inicia la aplicación:
+1. Launch the app:
 
 uvicorn main:app --reload
 
 
-2. Accede a la documentación de la API en tu navegador:
+2. Access the API documentation in your browser:
 
 http://localhost:8000/docs
 
 
-3. Prueba las diferentes rutas disponibles para realizar operaciones CRUD en los productos.
+3. Test the different routes available to perform CRUD operations on the products.
 
+## Contact
 
-## Contacto
-
-Si tienes alguna pregunta o sugerencia de este proyecto, no dudes en contactarme en [maribelaristizabal079@gmail.com](https://github.com/maribelaristizabal).
+If you have any questions or suggestions about this project, feel free to contact me at [maribelaristizabal079@gmail.com](https://github.com/maribelaristizabal).
 
 
