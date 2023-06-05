@@ -1,6 +1,6 @@
 # Inventory System Project - FastAPI
 
-<img src="img/inventory_system.png" alt="Inventory Logo">
+<img src="img/Sistema_de_invetario.png" alt="Inventory Logo">
 
 ## Description
 
